@@ -10,8 +10,9 @@ Simples, rápido e interativo, com menu no terminal e armazenamento em JSON
 - Criar registros com várias linhas de texto
 - Visualizar registros salvos
 - Remover registros pelo número
-- Menu interativo com arte ASCII
 
+<br>
+<br>
 <img width="885" height="498" alt="Seleção_025" src="https://github.com/user-attachments/assets/e2961140-b835-4401-acb2-42953d43e3a8" />
 
 
