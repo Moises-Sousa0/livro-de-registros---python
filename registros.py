@@ -5,17 +5,17 @@ from datetime import datetime
 
 
 try:
-    # Tenta abrir o arquivo de registros existentes
+    #tenta abrir o arquivo de registros existentes
     with open("registros.json", "r", encoding="utf-8") as f:
         registros = json.load(f)
 except FileNotFoundError:
-    # Se não existir, cria uma lista vazia
+    #se não existir, cria uma lista vazia
     registros = []
 
 #funcoes
 
 def listar():
-    """Mostra todos os registros salvos"""
+    #Mostra todos os registros salvos
     if not registros:
         print("Nenhum registro encontrado!")
         return
