@@ -12,6 +12,9 @@ Simples, rápido e interativo, com menu no terminal e armazenamento em JSON
 - Remover registros pelo número
 - Menu interativo com arte ASCII
 
+<img width="885" height="498" alt="Seleção_025" src="https://github.com/user-attachments/assets/e2961140-b835-4401-acb2-42953d43e3a8" />
+
+
 ---
 
 ## Como usar
