@@ -1,7 +1,19 @@
 import json
-import readline  #para histórico de input no terminal
 from datetime import datetime
 
+# Suporte a readline (Linux/macOS/Windows) + fallback sem ele
+try:
+    import readline  # Unix (Linux/macOS)
+except ImportError:
+    try:
+        import pyreadline3 as readline  # Windows
+    except ImportError:
+        readline = None  # Sem suporte a histórico/atalhos
+try:
+    with open("regis.json", "r", encoding="utf-8") as f:
+        regis = json.load(f)
+except FileNotFoundError:
+    regis = []
 
 
 try:
@@ -27,7 +39,6 @@ def listar():
 
 
 def registar():
-    """Permite ao usuário criar um novo registro"""
     print("Digite aqui (ou 'sair' para terminar):\n")
 
     bloco = []
