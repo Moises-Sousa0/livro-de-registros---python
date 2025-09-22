@@ -1,14 +1,14 @@
 import json
 from datetime import datetime
 
-# Suporte a readline (Linux/macOS/Windows) + fallback sem ele
+#suporte a readline + fallback sem ele
 try:
-    import readline  # Unix (Linux/macOS)
+    import readline  #linux
 except ImportError:
     try:
-        import pyreadline3 as readline  # Windows
+        import pyreadline3 as readline  #windows
     except ImportError:
-        readline = None  # Sem suporte a histórico/atalhos
+        readline = None  #sem suporte atalhos
 try:
     with open("regis.json", "r", encoding="utf-8") as f:
         regis = json.load(f)
